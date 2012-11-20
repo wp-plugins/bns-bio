@@ -4,7 +4,7 @@ Donate link: http://buynowshop.com/
 Tags: author, plugin-only
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 0.1
+Stable tag: 0.2
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -51,5 +51,10 @@ The shortcode is simply `bns_bio` wrapped in the standard square brackets.
 Please stay current with your WordPress installation, your active theme, and your plugins.
 
 == Changelog ==
+= 0.2 =
+* Release - November 2012
+* Refactor PHP closures into complete functions
+* Change sanity checks to self-deactivate extension plugins if 'BNS Bio' is not active
+
 = 0.1 =
 * Initial Release - November 2012

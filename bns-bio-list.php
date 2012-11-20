@@ -3,7 +3,7 @@
 Plugin Name: BNS Bio List
 Plugin URI: http://buynowshop.com/plugins/bns-bio/
 Description: An extension plugin included with BNS Bio to output the layout in an unordered list
-Version: 0.1
+Version: 0.2
 Text Domain: bns-bio-list
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
@@ -21,7 +21,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @link        http://buynowshop.com/plugins/bns-bio/
  * @link        https://github.com/Cais/bns-bio/
  * @link        http://wordpress.org/extend/plugins/bns-bio/
- * @version     0.1
+ * @version     0.2
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2012, Edward Caissie
  *
@@ -44,6 +44,11 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @version 0.2
+ * @date    November 19, 2012
+ * Change PHP closures to full functions
+ * Change sanity check to self-deactivate if 'BNS Bio' is not active
  */
 
 /**
@@ -83,9 +88,16 @@ if ( is_plugin_active( $bns_bio_plugin_directory . '/bns-bio.php' ) ) {
      * Add additional actions to change the layout
      * Set priority higher than default (read: action fires later than default)
      */
-    add_action( 'bns_bio_before_all', function(){ echo '<ul class="bns-bio-list">'; }, 20 );
+    add_action( 'bns_bio_before_all', 'bns_bio_open_list', 20 );
+    function bns_bio_open_list() {
+        echo '<ul class="bns-bio-list">';
+    }
+
     /** Set priority to fire earlier than 'BNS-Bio-Box' (at default 10) to insure output will validate */
-    add_action( 'bns_bio_after_all', function(){ echo '</ul><!-- .bns-bio-list -->'; }, 9 );
+    add_action( 'bns_bio_after_all', 'bns_bio_close_list', 9 );
+    function bns_bio_close_list() {
+        echo '</ul><!-- .bns-bio-list -->';
+    }
 
     /** Open an `li` tag */
     function bns_bio_list_item() {
@@ -105,8 +117,7 @@ if ( is_plugin_active( $bns_bio_plugin_directory . '/bns-bio.php' ) ) {
 
 } else {
 
-    /** @var $exit_message string - Message to display if 'BNS Bio' is not activated */
-    $exit_message = __( 'BNS Bio List requires the BNS Bio Plugin to be activated first.', 'bns-bio-list' );
-    exit ( $exit_message );
+    /** If 'BNS Bio' is not active then self-deactivate 'BNS Bio List' */
+    deactivate_plugins( $bns_bio_plugin_directory . '/bns-bio-list.php' );
 
 }
