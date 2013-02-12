@@ -3,7 +3,7 @@
 Plugin Name: BNS Bio Hide
 Plugin URI: http://buynowshop.com/plugins/bns-bio/
 Description: An extension plugin included with BNS Bio to hide the email address
-Version: 0.2
+Version: 0.3
 Text Domain: bns-bio-hide
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
@@ -22,7 +22,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @link        http://wordpress.org/extend/plugins/bns-bio/
  * @version     0.2
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2012, Edward Caissie
+ * @copyright   Copyright (c) 2012-2013, Edward Caissie
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the
@@ -47,6 +47,10 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @version 0.2
  * @date    November 19, 2012
  * Change sanity check to self-deactivate if 'BNS Bio' is not active
+ *
+ * @version 0.3
+ * @date    February 11, 2013
+ * Version matching to BNS-Bio
  */
 
 /**

@@ -3,8 +3,8 @@ Contributors: cais
 Donate link: http://buynowshop.com/
 Tags: author, plugin-only
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 0.2
+Tested up to: 3.5.1
+Stable tag: 0.3
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -25,7 +25,7 @@ The shortcode is simply `bns_bio` wrapped in the standard square brackets.
 * TBA
 
 == Other Notes ==
-* Copyright 2012  Edward Caissie  (email : edward.caissie@gmail.com)
+* Copyright 2012-2013  Edward Caissie  (email : edward.caissie@gmail.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License version 2,
@@ -51,6 +51,12 @@ The shortcode is simply `bns_bio` wrapped in the standard square brackets.
 Please stay current with your WordPress installation, your active theme, and your plugins.
 
 == Changelog ==
+= 0.3 =
+* Release - February 2013
+* Refactoring without functionality changes
+* Documentation updates
+* Added code block termination comments
+
 = 0.2 =
 * Release - November 2012
 * Refactor PHP closures into complete functions
