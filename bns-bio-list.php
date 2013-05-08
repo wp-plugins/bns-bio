@@ -3,7 +3,7 @@
 Plugin Name: BNS Bio List
 Plugin URI: http://buynowshop.com/plugins/bns-bio/
 Description: An extension plugin included with BNS Bio to output the layout in an unordered list
-Version: 0.3
+Version: 0.3.1
 Text Domain: bns-bio-list
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/

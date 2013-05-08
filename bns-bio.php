@@ -3,7 +3,7 @@
 Plugin Name: BNS Bio
 Plugin URI: http://buynowshop.com/plugins/bns-bio/
 Description: An author details shortcode plugin with extensions that modify output
-Version: 0.3
+Version: 0.3.1
 Text Domain: bns-bio
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
@@ -52,6 +52,10 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Documentation updates
  * Added code block termination comments
  * Added a 10px bottom margin to the general output
+ *
+ * @version 0.3.1
+ * @date    May 6, 2013
+ * Version number compatibility updates
  */
 
 class BNS_Bio {

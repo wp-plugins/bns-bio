@@ -3,7 +3,7 @@
 Plugin Name: BNS Bio Box
 Plugin URI: http://buynowshop.com/plugins/bns-bio/
 Description: An extension plugin included with BNS Bio to add a CSS container around output
-Version: 0.3
+Version: 0.3.1
 Text Domain: bns-bio-box
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
