@@ -3,7 +3,7 @@ Contributors: cais
 Donate link: http://buynowshop.com/
 Tags: author, plugin-only
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 0.3
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
